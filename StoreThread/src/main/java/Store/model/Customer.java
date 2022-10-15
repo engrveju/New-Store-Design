@@ -1,27 +1,21 @@
 package Store.model;
 
-public class Customer {
-    private Person person;
-    private int balance;
+import Store.enums.Qualification;
+import Store.enums.UserRole;
 
-    public Customer(Person person, int balance) {
-        this.person = person;
-        this.balance = balance;
+public class Customer extends Person{
+    private int accountbalance;
+
+    public Customer(String firstName, String lastName, String address, int accountBalance) {
+        super();
+        this.accountbalance = accountBalance;
     }
 
-    public Person getPerson() {
-        return person;
+    public int getAccountbalance() {
+        return accountbalance;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
-    }
-
-    public int getBalance() {
-        return balance;
-    }
-
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void setAccountbalance(int accountbalance) {
+        this.accountbalance = accountbalance;
     }
 }

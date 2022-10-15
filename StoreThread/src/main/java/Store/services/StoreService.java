@@ -18,7 +18,7 @@ public class StoreService {
                 String[]  productItem = line.split(",");
                 Product myProduct = new Product(productItem[0], Integer.parseInt(productItem[1]), productItem[2],
                         Integer.parseInt(productItem[3]), parseInt(productItem[4]));
-                System.out.println(myProduct);
+               // System.out.println(myProduct);
                // System.out.println("added");
                 StoreList.getProductList().add(myProduct);
             }

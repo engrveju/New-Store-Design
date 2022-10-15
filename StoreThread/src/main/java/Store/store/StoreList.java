@@ -6,7 +6,6 @@ import java.util.*;
 public class StoreList {
     private static Set<Cashier> cashierList = new HashSet<>();
     private static Set<Product> productList = new HashSet<>();
-    private static Set<Cart> customerCartList = new HashSet<>();
 
     public static Set<Cashier> getCashierList() {
 

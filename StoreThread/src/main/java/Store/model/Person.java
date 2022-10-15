@@ -10,6 +10,7 @@ public abstract class Person implements PersonInterface {
     private Qualification qualification;
     private UserRole role;
 
+    public Person() {}
     public Person(String firstName, String lastName, String address, Qualification qualification, UserRole role){
         this.firstName = firstName;
         this.lastName = lastName;
