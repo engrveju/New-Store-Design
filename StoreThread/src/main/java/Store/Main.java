@@ -5,17 +5,23 @@ import Store.interfaces.PersonInterface;
 import Store.model.*;
 import Store.services.CashierService;
 import Store.services.ManagerService;
+import Store.services.StoreService;
 import Store.store.StoreList;
 
+import java.io.IOException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Person person = new Person("Peter","Odo","Benin", Qualification.BSC,UserRole.CASHIER){};
-       Cashier mike = new Cashier(person);
+        Cashier mike = new Cashier(person);
         ManagerService m = new ManagerService();
         CashierService cashierService= new CashierService();
+        StoreService serve = new StoreService();
 
-        System.out.println(m.hireCashier(mike));
-        System.out.println(StoreList.getCashierList().size());
-        System.out.println(mike.getPerson());
+        serve.addItemToStore();
+
+        System.out.println(StoreList.getProductList().size());
+
+
     }
 }
