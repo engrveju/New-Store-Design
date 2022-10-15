@@ -3,8 +3,14 @@ package Store.model;
 import Store.enums.Qualification;
 import Store.enums.UserRole;
 
-public class Manager extends Person{
-    public Manager(String firstName, String lastName, String address, Qualification qualification, UserRole role) {
-        super(firstName, lastName, address, qualification, role);
+public class Manager{
+    private Person person;
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }

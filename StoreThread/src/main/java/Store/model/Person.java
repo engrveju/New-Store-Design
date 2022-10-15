@@ -1,8 +1,9 @@
 package Store.model;
 import Store.enums.*;
+import Store.interfaces.PersonInterface;
 
 
-public abstract class Person {
+public abstract class Person implements PersonInterface {
     private String firstName;
     private String lastName;
     private String address;
