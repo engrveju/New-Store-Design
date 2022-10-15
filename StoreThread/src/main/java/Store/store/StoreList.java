@@ -4,14 +4,16 @@ import Store.model.Cashier;
 import java.util.*;
 
 public class StoreList {
-    private static List<Cashier> cashierList = new ArrayList<>();
+    private static Set<Cashier> cashierList = new HashSet<>();
     private static Set<Product> productList = new HashSet<>();
+    private static Set<Cart> customerCartList = new HashSet<>();
 
-    public static List<Cashier> getCashierList() {
+    public static Set<Cashier> getCashierList() {
+
         return cashierList;
     }
 
-    public static void setCashierList(List<Cashier> cashierList) {
+    public static void setCashierList(Set<Cashier> cashierList) {
         StoreList.cashierList = cashierList;
     }
 
