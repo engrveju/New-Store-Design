@@ -1,7 +1,9 @@
 package Store;
+import Store.model.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Manager mike = new Manager();
+        mike.setPerson();
     }
 }

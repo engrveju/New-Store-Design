@@ -1,4 +1,6 @@
 package Store.model;
+import Store.enums.*;
+
 
 public abstract class Person {
     private String firstName;
@@ -11,8 +13,8 @@ public abstract class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
-        this.Qualification = qualification;
-        this.UserRole = role;
+        this.qualification = qualification;
+        this.role = role;
     }
 
     public String getFirstName(){
