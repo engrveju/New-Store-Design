@@ -6,9 +6,10 @@ import Store.model.*;
 
 public class Main {
     public static void main(String[] args) {
-        PersonInterface person = new Person("Peter","Odo","Benin", Qualification.MSC,UserRole.MANAGER){};
-       Manager mike = new Manager("e");
-        //"Peter","Odo","Benin", Qualification.MSC,UserRole.MANAGER
+        Person person = new Person("Peter","Odo","Benin", Qualification.MSC,UserRole.MANAGER){};
+       Manager mike = new Manager(person);
+        System.out.println(mike.getPerson());
+
 
     }
 }

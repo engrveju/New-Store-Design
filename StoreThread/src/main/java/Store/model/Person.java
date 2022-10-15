@@ -59,7 +59,7 @@ public abstract class Person implements PersonInterface {
 
     @Override
     public String toString() {
-        return "Person{" +
+        return role+" {" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", address='" + address + '\'' +

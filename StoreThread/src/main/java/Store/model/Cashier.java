@@ -1,12 +1,9 @@
 package Store.model;
 
-import Store.enums.Qualification;
-import Store.enums.UserRole;
-
-public class Manager{
+public class Cashier {
     private Person person;
 
-    public Manager(Person person) {
+    public Cashier(Person person) {
         this.person = person;
     }
 
