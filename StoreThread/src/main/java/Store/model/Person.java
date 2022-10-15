@@ -14,4 +14,54 @@ public abstract class Person {
         this.Qualification = qualification;
         this.UserRole = role;
     }
+
+    public String getFirstName(){
+        return firstName;
+    }
+    public void setFirstName(String firstName){
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Qualification getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(Qualification qualification) {
+        this.qualification = qualification;
+    }
+
+    public UserRole getRole() {
+        return role;
+    }
+
+    public void setRole(UserRole role) {
+        this.role = role;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", qualification=" + qualification +
+                ", role=" + role +
+                '}';
+    }
 }
